@@ -1,5 +1,12 @@
 <?php
-	// echo $this->id;
+	
+	// echo rtrim(preg_replace(array('/\\\\+/','/\/+/'),array('/','/'),'a//afdfd//fdfs///\\\\\\fdsfsdfs\\'),'/');
+	// exit;
+	
+	// $sImg=S_IMG_URL.'/static/a.png';
+
+	// var_dump(@getImageSize($sImg));
+	// exit;
 ?>
 <!DOCTYPE html>
 <html>
@@ -197,7 +204,7 @@
 
 						// <!-- 当前图片 s -->
 					sImgListTag+='<div class="image-current-wrap">';
-					sImgListTag+='<img class="uploaded-image" data-src="'+oImg.src+'" />';
+					sImgListTag+='<img data-size="'+oImg.size+'" class="uploaded-image" data-src="'+oImg.src+'" />';
 					sImgListTag+='</div>';
 						// <!-- 当前图片 e -->
 
@@ -230,6 +237,8 @@
 				
 
 				oParentWin.oImgList.afterAddImage(oNewImaList.find('div.image-hide-layer').css('opacity',0),oNewImaList.find('div.image-btn-wrap').css('opacity',0));
+
+				oParentWin.setImageSize(oNewImaList.find('img.uploaded-image'));
 				
 				// 加载图片
 				loadImg(oNewImaList).toLoad({

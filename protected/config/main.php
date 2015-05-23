@@ -16,7 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-		'ext.*', // 载入扩展文件夹下所有的文件
+		'ext.CX', // 载入扩展文件夹下所有的文件
 	),
 
 	'modules'=>array(

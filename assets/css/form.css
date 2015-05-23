@@ -238,10 +238,10 @@ div.image-hide-layer{
 	opacity:0.3;
 	filter:alpha(opacity:30);
 	background-color:#000;
-	z-index:0;
+	z-index:1;
 }
 div.image-btn-wrap{
-	z-index:1;
+	z-index:6;
 	/*background-color:#000;*/
 	/*opacity:*/
 }
@@ -295,8 +295,8 @@ div.image-bottom-btn-wrap{
 
 /*当前的图片*/
 div.image-current-wrap{
-	width:100%;
-	height:100%;
+	width:120px;
+	height:120px;
 	overflow:hidden;
 }
 

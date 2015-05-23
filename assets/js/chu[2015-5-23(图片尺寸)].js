@@ -71,7 +71,7 @@ function loadImg(mixSelect){
  * 设置的位置
  * @param {[type]} oImgList [description]
  */
-function setImageSize(oImgList){
+function setImagePosition(oImgList){
 	var oParentSizeList=arguments.length>1?arguments[1]:false,
 	iImgW,
 	iImgH,
@@ -80,82 +80,94 @@ function setImageSize(oImgList){
 
 	if(oParentSizeList){
 		// 如果提供父元素获取尺寸
-		oImgList.each(function (iIndex){
-			
-			setSize.call(this,oParentSizeList.eq(iIndex).width(),oParentSizeList.eq(iIndex).height());
+		oImageList.each(function (iIndex){
+			aImgSize=$(this).attr('data-size').split('*'); // 宽 * 高
+			iImgW=aImgSize[0];
+			iImgH=aImgSize[1];
+			iBaseW=oParentSizeList.eq(iIndex).width(); // 父元素的宽度
+			iBaseH=oParentSizeList.eq(iIndex).height(); // 父元素的高度
+
+			if(iImgW>iImgH){
+				// 如果图片的宽度大于高度
+				// 宽大
+				// 如果图片的宽度大于基准的宽度
+				if(iImgW>iBaseW){
+					// 如果图片的高度大于基准的高度
+					if(iImgH>iBaseH){
+						// 如果基准的宽度小于其高度
+						if(iBaseW>iBaseH){
+							$(this).width(iBaseW);
+						}else{
+							$(this).height(iBaseH);
+						}
+
+					}else{
+						// 如果基准的宽度小于其高度
+						if(iBaseW>iBaseH){
+							$(this).height(iBaseH);
+						}else{
+							$(this).width(iBaseW);
+						}
+					}
+				}else{
+					if(iImgH>iBaseH){
+						if(iBaseW>iBaseH){
+							$(this).height(iBaseH);
+						}else{
+							
+							$(this).width(iBaseW);
+						}
+					}else{
+						if(iBaseW>iBaseH){
+							// 
+							$(this).width(iBaseW);
+						}else{
+							$(this).height(iBaseH);
+						}
+					}
+				}
+
+			}else{
+				// 如果图片的宽度小于或等于高度
+				
+				// 如果图片的宽度大于基准的宽度
+				if(iImgW>iBaseW){
+					// 如果图片高度大于基准的高度
+					if(iImgH>iBaseH){
+						if(iBaseW>iBaseH){
+							$(this).width(iBaseW);
+						}else{
+							$(this).height(iBaseH);
+						}
+					}else{
+						if(iBaseW>iBaseH){
+							$(this).height(iBaseH);
+						}else{
+							$(this).width(iBaseW);
+						}
+					}
+				}else{
+					if(iImgH>iBaseH){
+						if(iBaseW>iBaseH){
+							$(this).height(iBaseH);
+						}else{
+							$(this).width(iBaseW);
+						}
+					}else{
+						if(iBaseW>iBaseH){
+							$(this).width(iBaseW);
+						}else{
+							$(this).height(iBaseH);
+						}
+					}
+				}
+			}
+
+
 		});
 	}else{
 		// 如果没有
-		var oParent;
-		oImgList.each(function (iIndex){
-			oParent=$(this).parent();
-			iBaseW=oParent.innerWidth(); // 父元素的宽度
-			iBaseH=oParent.innerHeight(); // 父元素的高度
-			setSize.call(this,iBaseW,iBaseH);
-
-		});
 	}
 
-	/**
-	 * 设置尺寸
-	 * @param {[type]} iBaseW [description]
-	 * @param {[type]} iBaseH [description]
-	 */
-	function setSize(iBaseW,iBaseH){
-		aImgSize=$(this).attr('data-p-w-h',iBaseW+'*'+iBaseH).attr('data-size').split('*'); // 宽 * 高
-		iImgW=aImgSize[0];
-		iImgH=aImgSize[1];
-
-		var bBaseWCompareBaseH=iBaseW>=iBaseH;
-
-		var bBaseWCompareBaseH=parseInt(iImgH)>=parseInt(iImgW);
-
-		// alert(iImgH+'-'+iImgW);
-		if(iImgW>iBaseW){
-			// alert(1);
-			// 如果图片高度大于基准的高度
-			if(iImgH>iBaseH){
-				bBaseWCompareBaseH?$(this).css({
-					width:iBaseW,
-					height:'auto'
-				}):$(this).css({
-					height:iBaseH,
-					width:'auto'
-				});
-				// 如果图片的宽度大于图片的高度
-				// 则设置高度
-			}else{
-
-				bBaseWCompareBaseH?$(this).css({
-					height:iBaseH,
-					width:'auto'
-				}):$(this).css({
-					width:iBaseW,
-					height:'auto'
-				});
-			}
-			// alert(1);
-		}else{
-			// alert(1);
-			if(iImgH>iBaseH){
-				// alert(1);
-				!bBaseWCompareBaseH?$(this).css({
-					height:iBaseH,
-					width:'auto'
-				}):$(this).css({
-					width:iBaseW,
-					height:'auto'
-				});
-			}else{
-				bBaseWCompareBaseH?$(this).css({
-					width:iBaseW,
-					height:'auto'
-				}):$(this).css({
-					height:iBaseH,
-					width:'auto'
-				});
-			}
-		}
-	}
 	
 }

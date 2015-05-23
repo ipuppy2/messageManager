@@ -249,7 +249,7 @@
 		?>
 		<div class="textarea-control-wrap textarea-control-public upload-image-list-wrap">
 			<ul class="">
-				<?php for($i=0;$i<5;$i++): ?>
+				<?php for($i=0;$i<2;$i++): ?>
 				<li class="signle-image-wrap signle-image-public-wrap-no-style-for-js image-has-loaded">
 
 					<!-- 隐藏域 s -->
@@ -268,42 +268,53 @@
 					<!-- 当图片还没有加载完成显示的内容 e -->
 
 
+					<!-- 遮罩 s -->
+					<div class="image-hide-layer"></div>
+					<!-- 遮罩 e -->
+
+					<!-- 按钮 s -->
+					<div class="image-btn-wrap">
+
+						<!-- 按钮的背景 s -->
+						<div class="image-btn-wrap-bg"></div>
+						<!-- 按钮的背景 e -->
+
+						<!-- 顶部按钮 s -->
+						<div class="image-top-btn-wrap image-btn-wrap-public">
+							<!-- 删除按钮 s -->
+							<a href="javascript:void(0);" class="image-delete-btn"></a>
+							<!-- 删除按钮 e -->
+						</div>
+						<!-- 顶部按钮 e -->
+
+						<!-- 底部按钮 s -->
+						<div class="image-bottom-btn-wrap image-btn-wrap-public"></div>
+						<!-- 底部按钮 e -->
+					</div>
+					<!-- 按钮 e -->
+
+
 					<!-- 当图片加载完成后,显示的内容 -->
 					<div class="image-has-loaded-wrap">
-						<!-- 遮罩 s -->
-						<div class="image-hide-layer"></div>
-						<!-- 遮罩 e -->
-
-
-						
-
 						<!-- 当前图片 s -->
 						<div class="image-current-wrap">
-							<img class="uploaded-image" data-src="<?php echo S_IMG_URL; ?>/test/d.jpg" />
+							<img data-size="475*300" class="uploaded-image" data-src="<?php echo S_IMG_URL; ?>/test/3.jpg" />
+
+							<!-- <img data-size="300*450" class="uploaded-image" data-src="<?php echo S_IMG_URL; ?>/test/2.png" /> -->
+
+							<!-- <img data-size="247*246" class="uploaded-image" data-src="<?php echo S_IMG_URL; ?>/test/d.jpg" /> -->
+
+							<!-- sprite -->
+							<!-- <img data-size="30*9" class="uploaded-image" data-src="<?php echo S_IMG_URL; ?>/test/sprite.png" /> -->
+
+							<!-- <img data-size="20*21" class="uploaded-image" data-src="<?php echo S_IMG_URL; ?>/test/l.gif" /> -->
+
+
+
+
 						</div>
 						<!-- 当前图片 e -->
-
-
-						<!-- 按钮 s -->
-						<div class="image-btn-wrap">
-
-							<!-- 按钮的背景 s -->
-							<div class="image-btn-wrap-bg"></div>
-							<!-- 按钮的背景 e -->
-
-							<!-- 顶部按钮 s -->
-							<div class="image-top-btn-wrap image-btn-wrap-public">
-								<!-- 删除按钮 s -->
-								<a href="javascript:void(0);" class="image-delete-btn"></a>
-								<!-- 删除按钮 e -->
-							</div>
-							<!-- 顶部按钮 e -->
-
-							<!-- 底部按钮 s -->
-							<div class="image-bottom-btn-wrap image-btn-wrap-public"></div>
-							<!-- 底部按钮 e -->
-						</div>
-						<!-- 按钮 e -->
+						
 					</div>
 				</li>
 				<?php endfor; ?>
@@ -398,5 +409,9 @@
 			$(this).find('div.image-has-loaded-wrap:first').fadeIn().find('img.uploaded-image:first').prop('src',oImg.src);
 		}
 	});
+
+	// alert($('.image-current-wrap').width());
+	// 设置图片尺寸
+	setImageSize($('img.uploaded-image'));
 //-->
 </script>
