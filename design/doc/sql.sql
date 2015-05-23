@@ -10,7 +10,7 @@ CREATE TABLE `chu_net_account`(
 	`account_user_name` VARCHAR(64) NOT NULL DEFAULT '' COMMENT '账号的用户名',
 	`account_password` VARCHAR(20) NOT NULL DEFAULT '' COMMENT '账号的密码',
 	`account_web_url` VARCHAR(2048) NOT NULL DEFAULT '' COMMENT '账号注册的网址',
-	`account_register_date` INT(11) NOT NULL DEFAULT '' COMMENT '注册时间',
+	`account_register_date` VARCHAR(10) NOT NULL DEFAULT '' COMMENT '注册时间',
 	`account_link_email` VARCHAR(64) NOT NULL DEFAULT '' COMMENT '账号关联的邮箱',
 	`account_link_qq` VARCHAR(16) NOT NULL DEFAULT '' COMMENT '账号关联的qq',
 	`account_other_describe` VARCHAR(4096) NOT NULL DEFAULT '' COMMENT '其它的说明',

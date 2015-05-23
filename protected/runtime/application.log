@@ -1,0 +1,772 @@
+2015/05/14 14:26:57 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.sPageTitle" is not defined.' in F:\www\Yii\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\www\messageManager\protected\views\layouts\message.php(5): CComponent->__get('sPageTitle')
+#1 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#3 F:\www\Yii\yii\framework\web\CController.php(781): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#4 F:\www\messageManager\protected\modules\account\controllers\DefaultController.php(7): CController->render('index')
+#5 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#6 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#7 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#8 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#11 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#12 F:\www\messageManager\index.php(14): CApplication->run()
+#13 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 14:45:32 [error] [php] include(AccountController.php): failed to open stream: No such file or directory (F:\www\Yii\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(5): spl_autoload_call()
+#1 F:\www\Yii\yii\framework\web\CWebApplication.php(345): require()
+#2 F:\www\Yii\yii\framework\web\CWebApplication.php(333): CWebApplication->createController()
+#3 F:\www\Yii\yii\framework\web\CWebApplication.php(271): CWebApplication->createController()
+#4 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#5 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (5)
+in F:\www\messageManager\index.php (14)
+2015/05/14 14:45:52 [error] [php] include(AccountController.php): failed to open stream: No such file or directory (F:\www\Yii\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(5): spl_autoload_call()
+#1 F:\www\Yii\yii\framework\web\CWebApplication.php(345): require()
+#2 F:\www\Yii\yii\framework\web\CWebApplication.php(333): CWebApplication->createController()
+#3 F:\www\Yii\yii\framework\web\CWebApplication.php(271): CWebApplication->createController()
+#4 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#5 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (5)
+in F:\www\messageManager\index.php (14)
+2015/05/14 14:48:29 [error] [php] include(BaseController.php): failed to open stream: No such file or directory (F:\www\Yii\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\AccountController.php(6): spl_autoload_call()
+#1 F:\www\Yii\yii\framework\web\CWebApplication.php(345): require()
+#2 F:\www\Yii\yii\framework\web\CWebApplication.php(333): CWebApplication->createController()
+#3 F:\www\Yii\yii\framework\web\CWebApplication.php(271): CWebApplication->createController()
+#4 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#5 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account
+in F:\www\messageManager\protected\modules\account\controllers\AccountController.php (6)
+in F:\www\messageManager\index.php (14)
+2015/05/14 14:49:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in F:\www\Yii\yii\framework\web\CController.php:477
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(262): CController->missingAction('')
+#1 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#2 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#3 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\www\messageManager\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 14:50:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in F:\www\Yii\yii\framework\web\CController.php:477
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(262): CController->missingAction('')
+#1 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#2 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#3 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\www\messageManager\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 14:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in F:\www\Yii\yii\framework\web\CController.php:477
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(262): CController->missingAction('')
+#1 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#2 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#3 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\www\messageManager\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 14:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in F:\www\Yii\yii\framework\web\CController.php:477
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(262): CController->missingAction('')
+#1 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#2 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#3 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\www\messageManager\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 14:52:22 [error] [php] include(AccountController.php): failed to open stream: No such file or directory (F:\www\Yii\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(5): spl_autoload_call()
+#1 F:\www\Yii\yii\framework\web\CWebApplication.php(345): require()
+#2 F:\www\Yii\yii\framework\web\CWebApplication.php(333): CWebApplication->createController()
+#3 F:\www\Yii\yii\framework\web\CWebApplication.php(271): CWebApplication->createController()
+#4 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#5 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (5)
+in F:\www\messageManager\index.php (14)
+2015/05/14 14:53:02 [error] [php] include(BaseController.php): failed to open stream: No such file or directory (F:\www\Yii\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\AccountController.php(6): spl_autoload_call()
+#1 F:\www\Yii\yii\framework\YiiBase.php(402): include()
+#2 unknown(0): autoload()
+#3 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(5): spl_autoload_call()
+#4 F:\www\Yii\yii\framework\web\CWebApplication.php(345): require()
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(333): CWebApplication->createController()
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(271): CWebApplication->createController()
+#7 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#8 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account
+in F:\www\messageManager\protected\modules\account\controllers\AccountController.php (6)
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (5)
+in F:\www\messageManager\index.php (14)
+2015/05/14 14:55:53 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "getPathOfAlias".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\AccountController.php(10): CComponent->__call('getPathOfAlias', Array)
+#1 F:\www\messageManager\protected\modules\account\controllers\AccountController.php(10): CWebApplication->getPathOfAlias('protected')
+#2 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): AccountController->actionIndex()
+#3 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#7 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#8 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 F:\www\messageManager\index.php(14): CApplication->run()
+#10 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 14:56:13 [error] [exception.CException] exception 'CException' with message 'NetAccountController and its behaviors do not have a method or closure named "getPathOfAlias".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\AccountController.php(10): CComponent->__call('getPathOfAlias', Array)
+#1 F:\www\messageManager\protected\modules\account\controllers\AccountController.php(10): NetAccountController->getPathOfAlias('protected')
+#2 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): AccountController->actionIndex()
+#3 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#7 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#8 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 F:\www\messageManager\index.php(14): CApplication->run()
+#10 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 15:54:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'chu_message.chu_net_account' n'existe pas. The SQL statement executed was: SHOW COLUMNS FROM `chu_net_account`.
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (15)
+in F:\www\messageManager\index.php (14)
+2015/05/14 15:54:33 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{net_account}}" for active record class "NetAccount" cannot be found in the database.' in F:\www\Yii\yii\framework\db\ar\CActiveRecord.php:2276
+Stack trace:
+#0 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(372): CActiveRecordMetaData->__construct(Object(NetAccount))
+#1 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecord::model('NetAccount')
+#2 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(62): CActiveRecord->getMetaData()
+#3 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(15): CActiveRecord->__construct()
+#4 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#5 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#9 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#10 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\www\messageManager\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 15:56:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'chu_message.net_account' n'existe pas. The SQL statement executed was: SHOW COLUMNS FROM `net_account`.
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (15)
+in F:\www\messageManager\index.php (14)
+2015/05/14 15:56:33 [error] [exception.CDbException] exception 'CDbException' with message 'The table "net_account" for active record class "NetAccount" cannot be found in the database.' in F:\www\Yii\yii\framework\db\ar\CActiveRecord.php:2276
+Stack trace:
+#0 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(372): CActiveRecordMetaData->__construct(Object(NetAccount))
+#1 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecord::model('NetAccount')
+#2 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(62): CActiveRecord->getMetaData()
+#3 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(15): CActiveRecord->__construct()
+#4 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#5 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#9 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#10 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\www\messageManager\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 15:56:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'chu_message.{net_account}' n'existe pas. The SQL statement executed was: SHOW COLUMNS FROM `{net_account}`.
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (15)
+in F:\www\messageManager\index.php (14)
+2015/05/14 15:56:41 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{net_account}" for active record class "NetAccount" cannot be found in the database.' in F:\www\Yii\yii\framework\db\ar\CActiveRecord.php:2276
+Stack trace:
+#0 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(372): CActiveRecordMetaData->__construct(Object(NetAccount))
+#1 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecord::model('NetAccount')
+#2 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(62): CActiveRecord->getMetaData()
+#3 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(15): CActiveRecord->__construct()
+#4 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#5 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#9 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#10 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\www\messageManager\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 15:56:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'chu_message.chu_net_account' n'existe pas. The SQL statement executed was: SHOW COLUMNS FROM `chu_net_account`.
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (15)
+in F:\www\messageManager\index.php (14)
+2015/05/14 15:56:58 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{net_account}}" for active record class "NetAccount" cannot be found in the database.' in F:\www\Yii\yii\framework\db\ar\CActiveRecord.php:2276
+Stack trace:
+#0 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(372): CActiveRecordMetaData->__construct(Object(NetAccount))
+#1 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecord::model('NetAccount')
+#2 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(62): CActiveRecord->getMetaData()
+#3 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(15): CActiveRecord->__construct()
+#4 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#5 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#9 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#10 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\www\messageManager\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/14 15:58:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'chu_message.chu_net_account' n'existe pas. The SQL statement executed was: SHOW COLUMNS FROM `chu_net_account`.
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (15)
+in F:\www\messageManager\index.php (14)
+2015/05/14 15:58:13 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{net_account}}" for active record class "NetAccount" cannot be found in the database.' in F:\www\Yii\yii\framework\db\ar\CActiveRecord.php:2276
+Stack trace:
+#0 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(372): CActiveRecordMetaData->__construct(Object(NetAccount))
+#1 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecord::model('NetAccount')
+#2 F:\www\Yii\yii\framework\db\ar\CActiveRecord.php(62): CActiveRecord->getMetaData()
+#3 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(15): CActiveRecord->__construct()
+#4 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#5 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#9 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#10 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\www\messageManager\index.php(14): CApplication->run()
+#12 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/17 08:39:08 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.enableClientValidate" is not defined.' in F:\www\Yii\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('enableClientVal...', true)
+#1 F:\www\Yii\yii\framework\web\CBaseController.php(139): CWidgetFactory->createWidget(Object(NetAccountController), 'CActiveForm', Array)
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(182): CBaseController->createWidget('CActiveForm', Array)
+#3 F:\www\messageManager\protected\modules\account\views\netAccount\edit.php(16): CBaseController->beginWidget('CActiveForm', Array)
+#4 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#5 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#6 F:\www\Yii\yii\framework\web\CController.php(866): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#7 F:\www\Yii\yii\framework\web\CController.php(779): CController->renderPartial('edit', Array, true)
+#8 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#9 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#10 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#12 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#14 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#15 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 F:\www\messageManager\index.php(14): CApplication->run()
+#17 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/17 08:41:57 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.validateOnChange" is not defined.' in F:\www\Yii\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('validateOnChang...', true)
+#1 F:\www\Yii\yii\framework\web\CBaseController.php(139): CWidgetFactory->createWidget(Object(NetAccountController), 'CActiveForm', Array)
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(182): CBaseController->createWidget('CActiveForm', Array)
+#3 F:\www\messageManager\protected\modules\account\views\netAccount\edit.php(18): CBaseController->beginWidget('CActiveForm', Array)
+#4 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#5 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#6 F:\www\Yii\yii\framework\web\CController.php(866): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#7 F:\www\Yii\yii\framework\web\CController.php(779): CController->renderPartial('edit', Array, true)
+#8 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#9 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#10 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#12 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#14 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#15 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 F:\www\messageManager\index.php(14): CApplication->run()
+#17 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/20 16:26:23 [error] [php] Missing argument 2 for CClientScript::registerScript(), called in F:\www\messageManager\protected\modules\account\views\netAccount\edit.php on line 2 and defined (F:\www\Yii\yii\framework\web\CClientScript.php:607)
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CBaseController.php(88): NetAccountController->renderInternal()
+#1 F:\www\Yii\yii\framework\web\CController.php(866): NetAccountController->renderFile()
+#2 F:\www\Yii\yii\framework\web\CController.php(779): NetAccountController->renderPartial()
+#3 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): NetAccountController->render()
+#4 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#5 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#6 F:\www\Yii\yii\framework\web\CController.php(278): NetAccountController->runAction()
+#7 F:\www\Yii\yii\framework\web\CController.php(257): NetAccountController->runActionWithFilters()
+#8 F:\www\Yii\yii\framework\web\CWebApplication.php(277): NetAccountController->run()
+#9 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#10 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account
+in F:\www\messageManager\protected\modules\account\views\netAccount\edit.php (2)
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (17)
+in F:\www\messageManager\index.php (14)
+2015/05/20 16:32:41 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "clientScript".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\views\layouts\message.php(9): CComponent->__call('clientScript', Array)
+#1 F:\www\messageManager\protected\views\layouts\message.php(9): CWebApplication->clientScript()
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#3 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#4 F:\www\Yii\yii\framework\web\CController.php(781): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#5 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#6 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#7 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#8 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#9 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#11 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#12 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\www\messageManager\index.php(14): CApplication->run()
+#14 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/20 16:32:56 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "clientScript".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\views\layouts\message.php(9): CComponent->__call('clientScript', Array)
+#1 F:\www\messageManager\protected\views\layouts\message.php(9): CWebApplication->clientScript()
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#3 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#4 F:\www\Yii\yii\framework\web\CController.php(781): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#5 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#6 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#7 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#8 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#9 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#11 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#12 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\www\messageManager\index.php(14): CApplication->run()
+#14 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/20 16:33:10 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "clientScript".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\views\layouts\message.php(9): CComponent->__call('clientScript', Array)
+#1 F:\www\messageManager\protected\views\layouts\message.php(9): CWebApplication->clientScript()
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#3 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#4 F:\www\Yii\yii\framework\web\CController.php(781): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#5 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#6 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#7 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#8 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#9 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#11 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#12 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\www\messageManager\index.php(14): CApplication->run()
+#14 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/20 16:33:36 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "clientScript".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\views\layouts\message.php(9): CComponent->__call('clientScript', Array)
+#1 F:\www\messageManager\protected\views\layouts\message.php(9): CWebApplication->clientScript()
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#3 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#4 F:\www\Yii\yii\framework\web\CController.php(781): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#5 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#6 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#7 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#8 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#9 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#11 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#12 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\www\messageManager\index.php(14): CApplication->run()
+#14 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/20 16:33:39 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "clientScript".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\views\layouts\message.php(9): CComponent->__call('clientScript', Array)
+#1 F:\www\messageManager\protected\views\layouts\message.php(9): CWebApplication->clientScript()
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#3 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#4 F:\www\Yii\yii\framework\web\CController.php(781): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#5 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#6 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#7 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#8 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#9 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#11 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#12 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\www\messageManager\index.php(14): CApplication->run()
+#14 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/20 16:40:08 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.clientScrifpt" is not defined.' in F:\www\Yii\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\www\Yii\yii\framework\base\CModule.php(88): CComponent->__get('clientScrifpt')
+#1 F:\www\messageManager\protected\views\layouts\message.php(7): CModule->__get('clientScrifpt')
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#3 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#4 F:\www\Yii\yii\framework\web\CController.php(781): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#5 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#6 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#7 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#8 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#9 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#11 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#12 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\www\messageManager\index.php(14): CApplication->run()
+#14 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/20 16:40:17 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "clientScript".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\views\layouts\message.php(7): CComponent->__call('clientScript', Array)
+#1 F:\www\messageManager\protected\views\layouts\message.php(7): CWebApplication->clientScript()
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#3 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#4 F:\www\Yii\yii\framework\web\CController.php(781): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#5 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#6 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#7 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#8 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#9 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#11 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#12 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\www\messageManager\index.php(14): CApplication->run()
+#14 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/20 16:40:29 [error] [exception.CException] exception 'CException' with message 'CClientScript and its behaviors do not have a method or closure named "registerCssfFile".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\views\layouts\message.php(7): CComponent->__call('registerCssfFil...', Array)
+#1 F:\www\messageManager\protected\views\layouts\message.php(7): CClientScript->registerCssfFile('http://127.0.0....')
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#3 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#4 F:\www\Yii\yii\framework\web\CController.php(781): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#5 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#6 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#7 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#8 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#9 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#11 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#12 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\www\messageManager\index.php(14): CApplication->run()
+#14 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/22 14:07:34 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "hideField".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\views\netAccount\edit.php(258): CComponent->__call('hideField', Array)
+#1 F:\www\messageManager\protected\modules\account\views\netAccount\edit.php(258): CActiveForm->hideField(Object(NetAccount), 'aUploadedImageL...', Array)
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#3 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', Array, true)
+#4 F:\www\Yii\yii\framework\web\CController.php(866): CBaseController->renderFile('F:\\www\\messageM...', Array, true)
+#5 F:\www\Yii\yii\framework\web\CController.php(779): CController->renderPartial('edit', Array, true)
+#6 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): CController->render('edit', Array)
+#7 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#8 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#9 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#10 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('')
+#12 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account')
+#13 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#14 F:\www\messageManager\index.php(14): CApplication->run()
+#15 {main} REQUEST_URI=/messageManager/index.php?r=account
+2015/05/22 16:14:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "account/test".' in F:\www\Yii\yii\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/test')
+#1 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\www\messageManager\index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/messageManager/index.php?r=account/test
+2015/05/22 16:14:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "account/net/test".' in F:\www\Yii\yii\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/net/tes...')
+#1 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\www\messageManager\index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/messageManager/index.php?r=account/net/test
+2015/05/22 16:15:22 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "/public/uploadImage".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('/public/uploadI...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 16:20:10 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "public/uploadImage".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('public/uploadIm...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 16:26:22 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "public.uploadImage".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('public.uploadIm...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 16:39:34 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "@app/views/public/uploadImage".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('@app/views/publ...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 16:39:35 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "@app/views/public/uploadImage".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('@app/views/publ...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 16:43:59 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "/public/uploadImage.php".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('/public/uploadI...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 16:44:32 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "public/uploadImage.php".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('public/uploadIm...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 16:49:56 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "@app/views/public/uploadImage.php".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('@app/views/publ...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 16:50:55 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "@app/views/public/uploadImage.php".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(779): CController->renderPartial('@app/views/publ...', NULL, true)
+#1 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->render('@app/views/publ...')
+#2 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#3 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#7 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#8 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 F:\www\messageManager\index.php(14): CApplication->run()
+#10 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 16:51:20 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "@app/views/public/uploadImage.php".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('@app/views/publ...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 17:00:28 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "//public/uploadImage.php".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('//public/upload...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 17:01:09 [error] [exception.CException] exception 'CException' with message 'CClientScript and its behaviors do not have a method or closure named "registerJsFile".' in F:\www\Yii\yii\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\www\messageManager\protected\views\public\uploadImage.php(6): CComponent->__call('registerJsFile', Array)
+#1 F:\www\messageManager\protected\views\public\uploadImage.php(6): CClientScript->registerJsFile('http://127.0.0....')
+#2 F:\www\Yii\yii\framework\web\CBaseController.php(119): require('F:\\www\\messageM...')
+#3 F:\www\Yii\yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('F:\\www\\messageM...', NULL, true)
+#4 F:\www\Yii\yii\framework\web\CController.php(866): CBaseController->renderFile('F:\\www\\messageM...', NULL, true)
+#5 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): CController->renderPartial('//public/upload...')
+#6 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#7 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#8 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#9 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('test')
+#11 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#12 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\www\messageManager\index.php(14): CApplication->run()
+#14 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+2015/05/22 17:02:07 [error] [php] Undefined variable: oForm (F:\www\messageManager\protected\views\public\uploadImage.php:103)
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(866): NetAccountController->renderFile()
+#1 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(21): NetAccountController->renderPartial()
+#2 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#3 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#4 F:\www\Yii\yii\framework\web\CController.php(278): NetAccountController->runAction()
+#5 F:\www\Yii\yii\framework\web\CController.php(257): NetAccountController->runActionWithFilters()
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(277): NetAccountController->run()
+#7 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#8 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+in F:\www\messageManager\protected\views\public\uploadImage.php (103)
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (21)
+in F:\www\messageManager\index.php (14)
+2015/05/22 17:14:11 [error] [php] Undefined variable: oForm (F:\www\messageManager\protected\views\public\uploadImage.php:88)
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(866): NetAccountController->renderFile()
+#1 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(23): NetAccountController->renderPartial()
+#2 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionTest()
+#3 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#4 F:\www\Yii\yii\framework\web\CController.php(278): NetAccountController->runAction()
+#5 F:\www\Yii\yii\framework\web\CController.php(257): NetAccountController->runActionWithFilters()
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(277): NetAccountController->run()
+#7 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#8 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account/netAccount/test
+in F:\www\messageManager\protected\views\public\uploadImage.php (88)
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (23)
+in F:\www\messageManager\index.php (14)
+2015/05/23 03:36:38 [error] [php] strpos() expects parameter 1 to be string, array given (F:\www\Yii\yii\framework\web\CController.php:960)
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CBaseController.php(119): require()
+#1 F:\www\Yii\yii\framework\web\CBaseController.php(88): NetAccountController->renderInternal()
+#2 F:\www\Yii\yii\framework\web\CController.php(866): NetAccountController->renderFile()
+#3 F:\www\Yii\yii\framework\web\CController.php(779): NetAccountController->renderPartial()
+#4 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(17): NetAccountController->render()
+#5 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionEdit()
+#6 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#7 F:\www\Yii\yii\framework\web\CController.php(278): NetAccountController->runAction()
+#8 F:\www\Yii\yii\framework\web\CController.php(257): NetAccountController->runActionWithFilters()
+#9 F:\www\Yii\yii\framework\web\CWebApplication.php(277): NetAccountController->run()
+#10 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#11 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#12 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account
+in F:\www\messageManager\protected\modules\account\views\netAccount\edit.php (310)
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (17)
+in F:\www\messageManager\index.php (14)
+2015/05/23 03:44:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uplsssoadImage".' in F:\www\Yii\yii\framework\web\CController.php:477
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(262): CController->missingAction('uplsssoadImage')
+#1 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('uplsssoadImage')
+#2 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#3 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\www\messageManager\index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/uplsssoadImage
+2015/05/23 04:25:48 [error] [exception.CHttpException.404] exception 'CHttpException' in F:\www\messageManager\protected\controllers\BaseController.php:15
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(24): BaseController->uploadImage(Array)
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionUploadImage()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('uploadImage')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/uploadImage
+2015/05/23 04:27:18 [error] [exception.CHttpException.404] exception 'CHttpException' in F:\www\messageManager\protected\controllers\BaseController.php:17
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(24): BaseController->uploadImage(Array)
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionUploadImage()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('uploadImage')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/uploadImage
+2015/05/23 04:27:32 [error] [exception.CHttpException.404] exception 'CHttpException' in F:\www\messageManager\protected\controllers\BaseController.php:17
+Stack trace:
+#0 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(24): BaseController->uploadImage(Array)
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionUploadImage()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('uploadImage')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/uploadImage
+2015/05/23 04:33:37 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "//base/toUplaodImage".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\controllers\BaseController.php(26): CController->renderPartial('//base/toUplaod...')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): BaseController->actionToUploadImage()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('touploadImage')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/touploadImage
+2015/05/23 04:35:45 [error] [exception.CException] exception 'CException' with message 'NetAccountController cannot find the requested view "toUploadImage".' in F:\www\Yii\yii\framework\web\CController.php:875
+Stack trace:
+#0 F:\www\messageManager\protected\controllers\BaseController.php(26): CController->renderPartial('toUploadImage')
+#1 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): BaseController->actionToUploadImage()
+#2 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\www\Yii\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 F:\www\Yii\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\www\Yii\yii\framework\web\CWebApplication.php(277): CController->run('touploadImage')
+#6 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('account/netAcco...')
+#7 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\www\messageManager\index.php(14): CApplication->run()
+#9 {main} REQUEST_URI=/messageManager/index.php?r=account/netAccount/touploadImage
+2015/05/23 06:18:09 [error] [php] Undefined variable: i (F:\www\messageManager\protected\views\base\uploadImage.php:180)
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(866): NetAccountController->renderFile()
+#1 F:\www\messageManager\protected\controllers\BaseController.php(18): NetAccountController->renderPartial()
+#2 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(24): NetAccountController->uploadImage()
+#3 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionUploadImage()
+#4 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#5 F:\www\Yii\yii\framework\web\CController.php(278): NetAccountController->runAction()
+#6 F:\www\Yii\yii\framework\web\CController.php(257): NetAccountController->runActionWithFilters()
+#7 F:\www\Yii\yii\framework\web\CWebApplication.php(277): NetAccountController->run()
+#8 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#9 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account/netAccount/uploadImage
+in F:\www\messageManager\protected\views\base\uploadImage.php (180)
+in F:\www\messageManager\protected\controllers\BaseController.php (18)
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (24)
+2015/05/23 06:18:09 [error] [php] Undefined variable: i (F:\www\messageManager\protected\views\base\uploadImage.php:180)
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(866): NetAccountController->renderFile()
+#1 F:\www\messageManager\protected\controllers\BaseController.php(18): NetAccountController->renderPartial()
+#2 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(24): NetAccountController->uploadImage()
+#3 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionUploadImage()
+#4 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#5 F:\www\Yii\yii\framework\web\CController.php(278): NetAccountController->runAction()
+#6 F:\www\Yii\yii\framework\web\CController.php(257): NetAccountController->runActionWithFilters()
+#7 F:\www\Yii\yii\framework\web\CWebApplication.php(277): NetAccountController->run()
+#8 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#9 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account/netAccount/uploadImage
+in F:\www\messageManager\protected\views\base\uploadImage.php (180)
+in F:\www\messageManager\protected\controllers\BaseController.php (18)
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (24)
+2015/05/23 06:18:14 [error] [php] Undefined variable: i (F:\www\messageManager\protected\views\base\uploadImage.php:180)
+Stack trace:
+#0 F:\www\Yii\yii\framework\web\CController.php(866): NetAccountController->renderFile()
+#1 F:\www\messageManager\protected\controllers\BaseController.php(18): NetAccountController->renderPartial()
+#2 F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php(24): NetAccountController->uploadImage()
+#3 F:\www\Yii\yii\framework\web\actions\CInlineAction.php(50): NetAccountController->actionUploadImage()
+#4 F:\www\Yii\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#5 F:\www\Yii\yii\framework\web\CController.php(278): NetAccountController->runAction()
+#6 F:\www\Yii\yii\framework\web\CController.php(257): NetAccountController->runActionWithFilters()
+#7 F:\www\Yii\yii\framework\web\CWebApplication.php(277): NetAccountController->run()
+#8 F:\www\Yii\yii\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#9 F:\www\Yii\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 F:\www\messageManager\index.php(14): CWebApplication->run()
+REQUEST_URI=/messageManager/index.php?r=account/netAccount/uploadImage
+in F:\www\messageManager\protected\views\base\uploadImage.php (180)
+in F:\www\messageManager\protected\controllers\BaseController.php (18)
+in F:\www\messageManager\protected\modules\account\controllers\NetAccountController.php (24)
